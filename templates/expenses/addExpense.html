@@ -3,10 +3,51 @@
 {% block content%}
 
 <h1>Add Expenses </h1>
+<div class="container mt-5">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="{% url 'expenses' %}">Expenses</a></li>
+          <li class="breadcrumb-item"><a href="#">Add expenses</a></li>
+          <!-- <li class="breadcrumb-item active" aria-current="page">Data</li> -->
+        </ol>
+    </nav>
+    
+      <div class="card">
+        <div class="card-body">
+        <form action="{% url 'add_expense' %}" method="post">
+          {% include 'partials/messages.html' %}
+          {% csrf_token %}
 
+          <div class="form-group">
+            <label for="">Amount</label>
+            <input type="number" name="amount" class="form-control form-control-sm" value="{{values.amount}}">
+          </div>
 
+          <div class="form-group">
+            <label for="">Description</label>
+            <input type="text" name="description" value = "{{values.description}}"class="form-control form-control-sm">
+          </div>
 
+          <div class="form-group">
+            <label for="">Category</label>
+            <select name="category" id="category" class="form-control">
+              {% for category in categories %}
+              <option name="category" value="{{category.name}}">{{category.name}}</option>
+              {%endfor%}
+            </select>
+          </div>
 
+          <div class="form-group">
+            <label for="">Date of Expense</label>
+            <input type="date" name="date" value="{{values.date}}" class="form-control form-control-sm">
+          </div>
+          <input type="submit" value="Submit" class="btn btn-secondary  btn-secondary-sm">
 
+          </form>
+        </div>        
+    
+      </div>
+  
+</div>
 
 {% endblock content%}

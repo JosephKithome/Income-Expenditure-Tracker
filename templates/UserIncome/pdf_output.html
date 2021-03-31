@@ -1,0 +1,53 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INCOME</title>
+    <style>
+        @page{
+            size: 'A4';
+            margin: 2.5cm 1.5cm 3.5cm 1.5cm;
+
+        @top-center{
+            content: "COMPANY NAME";
+        }   
+        @bottom-right{
+            content: "Page" counter(page)" of "counter(pages)";
+        } 
+        }
+    </style>
+</head>
+<body>
+    <img src="{% static 'images/logo.png'%}" width="100px" height="100px"  alt="Logo">
+    <h2>INCOME SOURCES</h2>
+    <table class="table">
+        <thead class="thead">
+            <tr>
+                <th>No</th>
+                <th>Source</th>
+                <th>Description</th>
+                <th>Date</th>
+                <th>Amount</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for income in income %}
+           <tr>
+            <td>{{forloop.counter}}</td>
+            <td>{{income.source}}</td>
+            <td>{{income.description}}</td>
+            <td>{{income.date}}</td>
+            <td>{{income.amount}}</td>
+           </tr>
+            {% endfor %}
+            <tr>
+                <td>ToTal:</td>
+                <td>{{total}}</td>
+            </tr>
+        </tbody>
+    </table>
+    
+</body>
+</html>

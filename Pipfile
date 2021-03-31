@@ -4,9 +4,15 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-django = "*"
+Django = "*"
 gunicorn = "*"
 django-heroku = "*"
+validate_email = "*"
+six = "*"
+xlwt = "*"
+weasyprint = "*"
+validate-email = "*"
+django-crispy-forms = "*"
 
 [dev-packages]
 
