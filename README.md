@@ -1,1 +1,3 @@
 # Income-Expenditure-Tracker
+This is a webapp built on django,it allows a user to keep track of his incomes and how lets a company  gains and spends money,allows a user to handle add expenses,incomes, a functionality to edit and delete(CRUD OPERATIONS).Expenses and  Income are categorised according to users currency of choice and can be changed according to users preferences
+it uses django multithreading to send emails faster,it uses ajax authenticattion and validation technique,it calculates the income and expenses spend in the last 6 months and visualizes them in charts.It also allowss a user in this case a company to be able to generate excel,pdf and csv for further analysis.
