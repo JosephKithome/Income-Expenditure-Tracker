@@ -58,7 +58,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'Income.urls'
+ROOT_URLCONF = 'income.urls'
 
 TEMPLATES = [
     {
@@ -76,7 +76,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'Income.wsgi.application'
+WSGI_APPLICATION = 'income.wsgi.application'
 
 
 # Database
