@@ -1,2 +1,3 @@
 release: python manage.py migrate
-web:gunicorn Income.wsgi
+
+web: gunicorn Income.wsgi
