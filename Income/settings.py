@@ -23,12 +23,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'k2yam-gg%k_8cr+c^(-ult8)pe(#=ot%r1c@9@&)z1-4d6k^(r'
+SECRET_KEY =os.environ.get('SECRET_KEY','sample_unsafe_secret')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = os.environ.get("DEBUG",default=True)
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['herokuapp.com/','localhost',"127.0.0.1"]
 
 
 # Application definition
@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.sites',
     'expenses',
     'authentication',
     'myUserPreferences',
@@ -83,8 +84,13 @@ WSGI_APPLICATION = 'Income.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        # 'ENGINE': 'django.db.backends.postgresql',
+        # 'NAME': os.environ.get("DB_NAME"),
+        # 'PASSWORD':os.environ.get("DB_PASSWORD"),
+        # 'USER': os.environ.get("DB_USER"),
+        # 'PORT':os.environ.get("PORT"),
+        "ENGINE": "django.db.backends.sqlite3",
+        "NAME": BASE_DIR / "db.sqlite3",
     }
 }
 
@@ -136,6 +142,10 @@ django_heroku.settings(locals())
 MESSAGE_TAGS ={
    messages.ERROR :'danger'
 } 
+
+
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
 # EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 # EMAIL_HOST = os.environ.get('EMAIL_HOST')
 # EMAIL_USE_TLS = True

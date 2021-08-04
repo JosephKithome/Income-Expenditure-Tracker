@@ -14,7 +14,7 @@ class UseIncome(models.Model):
         return self.source
     
     class Meta:
-           ordering:['-date']
+           ordering=['-date']
            verbose_name_plural ="UserIncomes"
 
 
