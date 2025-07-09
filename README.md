@@ -48,3 +48,78 @@ Here's a merged and enhanced feature overview of the Income-Expenditure-Tracker:
    - Export-ready financial reports (PDF/CSV formats)  
 
 The system combines Django's robust backend capabilities with responsive frontend components, using HTML/CSS/JavaScript for dynamic visualizations. While currently using SQLite, the architecture supports potential migration to PostgreSQL/MySQL.
+
+
+# Income-Expenditure-Tracker
+
+A modern web application to efficiently track and visualize your income and expenses.  
+Easily record transactions, review analytics, and manage your personal finance on a secure and user-friendly dashboard.
+
+---
+
+## 📸 Screenshots
+
+| Overview                                   | Add Entry                                   | Manage Entries                                |
+|---------------------------------------------|---------------------------------------------|-----------------------------------------------|
+| ![Overview](zAppscreenshots/Screenshot_2021-03-31_09_09_25.png) | ![Add Entry](zAppscreenshots/Screenshot_2021-03-31_09_09_35.png) | ![Manage Entries](zAppscreenshots/Screenshot_2021-03-31_09_09_44.png) |
+
+| Analytics                                   | User Profile                                | Admin Dashboard                               |
+|---------------------------------------------|---------------------------------------------|-----------------------------------------------|
+| ![Analytics](zAppscreenshots/Screenshot_2021-03-31_09_09_56.png) | ![User Profile](zAppscreenshots/Screenshot_2021-03-31_09_10_01.png) | ![Admin Dashboard](zAppscreenshots/Screenshot_2021-03-31_09_10_09.png) |
+
+---
+
+## 🚀 Key Features
+
+- **Dual Financial Tracking:** Record both income and expenses with a unified interface.
+- **Custom Categories:** Tag transactions for easy filtering and analysis.
+- **Timeline & Search:** View your transaction history with advanced search and filters.
+- **Full CRUD:** Add, edit, or delete any transaction.
+- **Bulk Import/Export:** Support for CSV and Excel files.
+- **Data Validation:** Automatic checks for currency formats and dates.
+- **Secure Authentication:** Email-based login, password recovery, and session management.
+- **Role-Based Access:** User/Admin tiers with permission controls.
+- **Analytics & Reports:** Visualize finances with charts and export-ready PDF/CSV reports.
+- **Admin Tools:** Django admin for managing users and auditing activity.
+
+---
+
+## 🛠️ Technology Stack
+
+- **Backend:** Python, Django
+- **Frontend:** HTML, CSS, JavaScript
+- **Database:** SQLite (can be upgraded for production)
+
+---
+
+## ⚡ Quick Start
+
+1. **Clone the Repository:**
+   ```bash
+   git clone https://github.com/JosephKithome/Income-Expenditure-Tracker.git
+   cd Income-Expenditure-Tracker
+   ```
+
+2. **Install Dependencies:**
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. **Apply Migrations & Run Server:**
+   ```bash
+   python manage.py migrate
+   python manage.py runserver
+   ```
+
+4. **Access the App:**  
+   Open [http://localhost:8000](http://localhost:8000) in your browser.
+
+---
+
+## 📄 License
+
+_This project does not specify a license. All rights reserved by the author._
+
+---
+
+*For more details, feature requests, or bug reports, please create an issue or pull request in this repository.*
