@@ -1,3 +1,7 @@
+# Income-Expenditure-Tracker
+
+A modern web application to efficiently track and visualize your income and expenses.  
+Easily record transactions, review analytics, and manage your personal finance on a secure and user-friendly dashboard.
 This project is an Income-Expenditure-Tracker, which is a web application that allows users to track their income and expenses. The project is hosted on GitHub and is publicly available.
 
 ### Main Function Points
@@ -15,6 +19,24 @@ This project is an Income-Expenditure-Tracker, which is a web application that a
 ### License
 The project does not specify a license, so the default copyright applies.
 
+
+The system combines Django's robust backend capabilities with responsive frontend components, using HTML/CSS/JavaScript for dynamic visualizations. While currently using SQLite, the architecture supports potential migration to PostgreSQL/MySQL.
+
+---
+
+## 📸 Screenshots
+
+| Overview                                   | Add Entry                                   | Manage Entries                                |
+|---------------------------------------------|---------------------------------------------|-----------------------------------------------|
+| ![Overview](zAppscreenshots/Screenshot_2021-03-31_09_09_25.png) | ![Add Entry](zAppscreenshots/Screenshot_2021-03-31_09_09_35.png) | ![Manage Entries](zAppscreenshots/Screenshot_2021-03-31_09_09_44.png) |
+
+| Analytics                                   | User Profile                                | Admin Dashboard                               |
+|---------------------------------------------|---------------------------------------------|-----------------------------------------------|
+| ![Analytics](zAppscreenshots/Screenshot_2021-03-31_09_09_56.png) | ![User Profile](zAppscreenshots/Screenshot_2021-03-31_09_10_01.png) | ![Admin Dashboard](zAppscreenshots/Screenshot_2021-03-31_09_10_09.png) |
+
+---
+
+## 🚀 Key Features
 
 Here's a merged and enhanced feature overview of the Income-Expenditure-Tracker:
 
@@ -46,41 +68,6 @@ Here's a merged and enhanced feature overview of the Income-Expenditure-Tracker:
    - Django admin dashboard for user management  
    - System-wide transaction audit trails  
    - Export-ready financial reports (PDF/CSV formats)  
-
-The system combines Django's robust backend capabilities with responsive frontend components, using HTML/CSS/JavaScript for dynamic visualizations. While currently using SQLite, the architecture supports potential migration to PostgreSQL/MySQL.
-
-
-# Income-Expenditure-Tracker
-
-A modern web application to efficiently track and visualize your income and expenses.  
-Easily record transactions, review analytics, and manage your personal finance on a secure and user-friendly dashboard.
-
----
-
-## 📸 Screenshots
-
-| Overview                                   | Add Entry                                   | Manage Entries                                |
-|---------------------------------------------|---------------------------------------------|-----------------------------------------------|
-| ![Overview](zAppscreenshots/Screenshot_2021-03-31_09_09_25.png) | ![Add Entry](zAppscreenshots/Screenshot_2021-03-31_09_09_35.png) | ![Manage Entries](zAppscreenshots/Screenshot_2021-03-31_09_09_44.png) |
-
-| Analytics                                   | User Profile                                | Admin Dashboard                               |
-|---------------------------------------------|---------------------------------------------|-----------------------------------------------|
-| ![Analytics](zAppscreenshots/Screenshot_2021-03-31_09_09_56.png) | ![User Profile](zAppscreenshots/Screenshot_2021-03-31_09_10_01.png) | ![Admin Dashboard](zAppscreenshots/Screenshot_2021-03-31_09_10_09.png) |
-
----
-
-## 🚀 Key Features
-
-- **Dual Financial Tracking:** Record both income and expenses with a unified interface.
-- **Custom Categories:** Tag transactions for easy filtering and analysis.
-- **Timeline & Search:** View your transaction history with advanced search and filters.
-- **Full CRUD:** Add, edit, or delete any transaction.
-- **Bulk Import/Export:** Support for CSV and Excel files.
-- **Data Validation:** Automatic checks for currency formats and dates.
-- **Secure Authentication:** Email-based login, password recovery, and session management.
-- **Role-Based Access:** User/Admin tiers with permission controls.
-- **Analytics & Reports:** Visualize finances with charts and export-ready PDF/CSV reports.
-- **Admin Tools:** Django admin for managing users and auditing activity.
 
 ---
 
