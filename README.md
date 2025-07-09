@@ -10,15 +10,6 @@ This project is an Income-Expenditure-Tracker, which is a web application that a
 - Stores user data in a database
 - Provides user authentication and preferences management
 
-### Technology Stack
-- Python
-- Django (web framework)
-- HTML, CSS, JavaScript (front-end)
-- SQLite (database)
-
-### License
-The project does not specify a license, so the default copyright applies.
-
 
 The system combines Django's robust backend capabilities with responsive frontend components, using HTML/CSS/JavaScript for dynamic visualizations. While currently using SQLite, the architecture supports potential migration to PostgreSQL/MySQL.
 
